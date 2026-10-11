@@ -6,9 +6,9 @@ sequenceDiagram
     participant App as Mobile app
     participant IdP as Central IdP
     participant GW as API Gateway
-    participant VS as Service DB
+    participant VS as Verification service
     participant S3@{ "type": "database", "alias": "S3-compatible storage" }
-    participant DB@{ "type": "database", "alias": "Verification DB" }
+    participant DB@{ "type": "database", "alias": "Service DB" }
     participant API as External API
 
     IdP-->>App: Issues JWT
